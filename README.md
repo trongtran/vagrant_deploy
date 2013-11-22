@@ -1,4 +1,4 @@
-vagrant
+Vagrant
 =======
 
 ##WHY VAGRANT
@@ -15,7 +15,7 @@ For more info go to vagrantup.com
 To use the script simply download the attached file, extract it and setup vagrant by doing the following: 
 
 ##1
-```
+```pearl
 sudo apt-get install vagrant
 ```
  
@@ -25,7 +25,8 @@ vagrant box add precise32 \
     http://files.vagrantup.com/precise32.box
 ```
  
-##3 Navigate to the directory where you want to set up your project
+##3 
+Navigate to the directory where you want to set up your project
  
 ##4 
 ```

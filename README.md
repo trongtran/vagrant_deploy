@@ -44,9 +44,9 @@ vagrant up
 ```
 
 
-After the above is finished you should be able to access your box by going to: `http://192.168.100.101`
+After the above is finished you should be able to access your box by going to: [http://192.168.100.101](http://192.168.100.101)
 If you need another IP address i.e. for a second box, simply edit "Vagrantfile" located in your project directory and change the IP address prior running `vagrant up` (step 5). 
 
 You can start adding files to `web/` within your project directory, the files will be automatically added to the webroot of your vagrant box.
 
-To edit something within the box (e.g. the vhost) simply type `vagrant ssh` in your project directory to ssh to the box.
+To edit something within the box (e.g. the vhost or to setup a database) simply type `vagrant ssh` in your project directory to ssh to the box.

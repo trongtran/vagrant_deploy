@@ -3,6 +3,7 @@ Vagrant Deploy
 
 ####What is it?
 Simple deployment script for Vagrant which sets up a LAMP enviroment running Ubuntu 12.10 that can be accessed via browser without any additional configuation.
+The deployment script is located in deploy/deploy.sh feel free to modify it as you need.
 
 ####Why Vagrant?
 Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
@@ -15,7 +16,7 @@ For more info go to [vagrantup.com](http://vagrantup.com)
 
 ##Setup
 
-To use the script simply download the attached file, extract it and setup vagrant by doing the following: 
+Simply pull down the repo and setup vagrant by doing the following: 
 
 ###1. Install vagrant
 ```sh
@@ -28,12 +29,14 @@ vagrant box add precise32 \
     http://files.vagrantup.com/precise32.box
 ```
  
-###3. Navigate to the directory where you want to set up your project and type
+###3. Edit your git details
+run `vim deploy/deploy.sh` and edit in your git details
+ 
+###4. Copy vagrant_deploy files to your project directory
+navigate to the project directory and run
 ```sh
-cp path/to/vagrantarchive/* . -R
+cp path/to/vagrant_deploy/* . -R
 ```
-
-###4. Type `vim deploy/deploy.sh` and put in your git details
 
 ###5. Spawn the box
 ```sh
@@ -41,11 +44,9 @@ vagrant up
 ```
 
 
-Now you can access you box by going to: `http://192.168.100.101`
-If you want to make the box available on your local network instead of just your local machine follow this tutorial.
+After the above is finished you should be able to access your box by going to: `http://192.168.100.101`
 If you need another IP address i.e. for a second box, simply edit "Vagrantfile" located in your project directory and change the IP address prior running `vagrant up` (step 5). 
 
-You can start adding files to the directory where you setup your project `./web/`, the files will be automatically added to the webroot of your vagrant box.
+You can start adding files to `web/` within your project directory, the files will be automatically added to the webroot of your vagrant box.
 
-To edit something within the box (e.g. the vhost) simply type `vagrant ssh`
-in your project directory to ssh to the box.
+To edit something within the box (e.g. the vhost) simply type `vagrant ssh` in your project directory to ssh to the box.

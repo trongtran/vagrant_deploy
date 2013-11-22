@@ -1,5 +1,8 @@
-Vagrant
+Vagrant Deploy
 =======
+
+####What is it?
+Simple deployment script for Vagrant which sets up a LAMP enviroment running Ubuntu 12.10 that can be accessed via browser without any additional configuation.
 
 ####Why Vagrant
 Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
@@ -41,7 +44,9 @@ vagrant up
 
 Now you can access you box by going to: `http://192.168.100.101`
 If you want to make the box available on your local network instead of just your local machine follow this tutorial.
-If you need another IP address i.e. for a second box, simply edit "Vagrantfile" located in your project directory for that box prior running `vagrant up` (step 5). 
+If you need another IP address i.e. for a second box, simply edit "Vagrantfile" located in your project directory and change the IP address prior running `vagrant up` (step 5). 
 
-You can start adding files to the directory where you setup your project `./web/`, the files will be automatically added to the webroot of your vagrant box
+You can start adding files to the directory where you setup your project `./web/`, the files will be automatically added to the webroot of your vagrant box.
 
+To edit something within the box (e.g. the vhost) simply go `vagrant ssh`
+in your project directory

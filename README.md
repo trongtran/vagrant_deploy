@@ -35,7 +35,7 @@ run `vim deploy/deploy.sh` and edit in your git details
 ###4. Copy vagrant_deploy files to your project directory
 navigate to the project directory and run
 ```sh
-cp path/to/repo/vagrant_deploy/* . -R
+cp -r path/to/repo/vagrant_deploy/* .
 ```
 
 ###5. Spawn the box

@@ -3,7 +3,7 @@ Vagrant Deploy
 
 ####What is it?
 Simple deployment script for Vagrant which sets up a LAMP enviroment running Ubuntu 12.10 that can be accessed via browser without any additional configuation.
-The deployment script is located in deploy/deploy.sh feel free to modify it as you need.
+The deployment script is located in `deploy/deploy.sh` feel free to modify it as you need.
 
 ####Why Vagrant?
 Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.

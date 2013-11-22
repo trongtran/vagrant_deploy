@@ -17,26 +17,25 @@ For more info go to [vagrantup.com](http://vagrantup.com)
 
 To use the script simply download the attached file, extract it and setup vagrant by doing the following: 
 
-###1.
+###1. Install vagrant
 ```sh
 sudo apt-get install vagrant
 ```
  
-###2.
+###2. Download Ubunutu box
 ```sh
 vagrant box add precise32 \
     http://files.vagrantup.com/precise32.box
 ```
  
-###3.
-Navigate to the directory where you want to set up your project
- 
-###4.
+###3. Navigate to the directory where you want to set up your project and type
 ```sh
 cp path/to/vagrantarchive/* . -R
 ```
 
-###5.
+###4. Type `vim deploy/deploy.sh` and put in your git details
+
+###5. Spawn the box
 ```sh
 vagrant up
 ```

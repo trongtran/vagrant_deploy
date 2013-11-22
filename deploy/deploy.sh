@@ -13,10 +13,10 @@ git config --global user.name "Your Name"
 git config --global user.email "you@email.com"
 git config --global credential.helper cache
 
-#add alias for pretty git log tree
+#add alias for pretty git log tree "gitlog"
 echo "alias gitlog=\"git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)— %cn%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative\"" >> ~/.bashrc
 
-#display current branch name in commang line
+#display the name of the current git branch in commandline
 cat << 'EOF' >> ~/.bashrc
 c_cyan=`tput setaf 6`
 c_red=`tput setaf 1`

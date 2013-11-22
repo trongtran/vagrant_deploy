@@ -48,5 +48,5 @@ If you need another IP address i.e. for a second box, simply edit "Vagrantfile" 
 
 You can start adding files to the directory where you setup your project `./web/`, the files will be automatically added to the webroot of your vagrant box.
 
-To edit something within the box (e.g. the vhost) simply go `vagrant ssh`
+To edit something within the box (e.g. the vhost) simply type `vagrant ssh`
 in your project directory to ssh to the box.

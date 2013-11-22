@@ -20,7 +20,7 @@ sudo apt-get install vagrant
 ```
  
 ###2.
-```
+```bash
 vagrant box add precise32 \
     http://files.vagrantup.com/precise32.box
 ```
@@ -29,12 +29,12 @@ vagrant box add precise32 \
 Navigate to the directory where you want to set up your project
  
 ###4.
-```
+```bash
 cp path/to/vagrantarchive/* . -R
 ```
 
 ###5.
-```
+```bash
 vagrant up
 ```
 

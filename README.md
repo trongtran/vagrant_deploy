@@ -30,7 +30,7 @@ vagrant box add precise32 \
 ```
  
 ###3. Edit your git details
-run `vim deploy/deploy.sh` and edit in your git details
+run `vim deploy/deploy.sh` and edit your git details
  
 ###4. Copy vagrant_deploy files to your project directory
 navigate to the project directory and run
